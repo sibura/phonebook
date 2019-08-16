@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Phonebook</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css'>
+    
+    <script src='index.js'></script>
+</head>
+<body>
+    <h1>Phonebook App</h1>
+    <input type="text" id="search" placeholder="Type to search">
+    <hr>
+    <table id="contacts-table" class="table table-striped">
+      <tr id="contacts-head">
+        <th>ID</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Number</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+    </table>
+    
+    <form id="contacts-form">
+      <div class="item text">
+        <label>First name:</label>
+        <div class="field">
+          <input type="text" name="first_name" />
+        </div>
+      </div>
+      <div class="item text">
+        <label>Last name:</label>
+        <div class="field">
+          <input type="text" name="last_name" />
+        </div>
+      </div>
+      <div class="item text">
+        <label>Number:</label>
+        <div class="field">
+          <input type="telNo" name="number" />
+        </div>
+      </div>
+      <div class="item text">
+        <label>Email:</label>
+        <div class="field">
+          <input type="email" name="email" />
+        </div>
+      </div>
+      <div class="button-wrapper">
+        <div class="item button">
+          <div class="field">
+            <input type="button" id="contacts-op-discard" value="Discard" />
+          </div>
+        </div>
+        <div class="item button button-default">
+          <div class="field">
+            <input type="submit" id="contacts-op-save" value="Save" />
+          </div>
+        </div>
+      </div>
+    
+      <input type="hidden" name="id_entry" value="0" />
+    </form>
+    <script src="index.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>
